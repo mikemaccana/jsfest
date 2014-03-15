@@ -1,0 +1,235 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Browse like Xerces
+
+    link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Vampiro+One')
+
+    // build:css styles/styles.css
+    //- Check out 'src/bower_components/prism/themes/' for available themes
+    link(rel='stylesheet', type='text/css', href='bower_components/prism/themes/prism-funky.css')
+    link(rel='stylesheet', type='text/css', href='styles/main.css')
+    // endbuild
+
+  body
+
+    article
+
+      section
+        h1 Hi
+        ul
+          li I'm @mikemaccana
+
+      section.firework
+
+      section
+        p Solving stress and uncertainty around software deploys
+
+      section
+        h1 Browse like Xerces, the <br/><strong>GOD KING OF THE PERSIANS</strong>
+
+      section
+        h2 This talk isn't:
+        ul
+          li How to make a Chrome Extension
+
+      section
+        h2 This talk is:
+        ul
+          li Controlling the world
+
+      section
+        h2 Creators not consumers
+        ul
+          li
+          li Mould and shape the world in our image
+          li Even when we're not working
+
+      section.medium
+
+      section
+        h1 Chapter 1
+        h2 Darius the Wizard Slayer
+
+      section
+        q Darius was an active emperor, busy with building programs in Persepolis, Susa, Egypt, and writing many Extensions in the Chrome Web Store.
+        cite Wikipedia (retrieved just now)
+
+      section
+        h1 The Story of Darius
+
+      section.darius
+
+      section
+        h1 Knowing what's real
+
+      section
+        h1.real Shapeshifting wizard ✓
+        h1.notreal Dead King ✗
+
+      section.jaden
+
+      section.mirrors
+
+      section
+        h1 Demo time
+
+      section.worlds
+
+      section
+        h2 An extension
+        ul
+          li Make a folder
+          li Make a manifest.js
+            pre
+              code.language-javascript.
+                "content_scripts": [
+                  {
+                    "matches": [
+                      "http://*/*",
+                      "https://*/*"
+                    ],
+                    "js": ["js/superagent.js", "js/eyes.js"],
+                    "run_at": "document_end"
+                  }
+                ],
+          li Add some JS as a content script
+          li Load chrome:///extensions, click 'developer mode', pick folder
+
+      section.pythagoras
+
+      section
+        h2 Eye Size Calc
+        hr
+        pre
+          code.language-javascript.
+            var eyeSize =
+              ( Math.sqrt(Math.pow(eyeDistanceX,2)
+                + Math.pow(eyeDistanceY,2)) )
+              / EYE_SIZE_TO_DISTANCE_RATIO;
+
+      section
+        h1 Chapter 2
+        h2 Xerces
+
+      section.xerces
+
+      section
+        ul
+          li Born of Darius
+          li Cyrus's Daughter
+
+      section
+        ul
+          li King of Persia
+          li King of Media
+          li Great King
+          li King of Kings
+          li King of Nations
+          li Fastest Typist
+
+      section.worlds
+
+      section
+        h2 Jumping the wall
+        hr
+        pre
+          code.language-javascript.
+            var injectJSFile = function(file) {
+              var url = chrome.extension.getURL(file);
+              var script = document.createElement('script');
+              script.src = url;
+              document.querySelector('head').appendChild(script);
+            }
+
+            injectJSFile('injectme.js')
+        h4 In your manifest.json:
+        pre
+          code.language-javascript.
+            "web_accessible_resources": ["injectme.js"]
+
+      section
+        h1 Demo time
+
+
+
+
+
+      section
+        h1 Chapter 3
+        h2 Whipping the Sea
+
+      section
+        ul
+          li Hellespont thwarted his ambitions
+
+      section.sea
+
+      section
+        ul
+          li A Soft Murmur
+
+      section.backgroundapp
+
+      section
+        p Soon Chrome will have keyboard shortcuts for extensions
+        p So you can listen directly from the background app
+
+      section
+        h1 Chapter 4
+        h2 Conquering
+
+      section.refresh
+
+      section
+        h2 If only there was a programming language in the browser
+
+      section
+        p Thankyou
+
+      section
+        h2 Make an API for anything with MutationSummary
+        hr
+        pre
+          code.language-javascript.
+            var observer = new MutationSummary({
+              callback: function(summaries){
+                // Only 1 query, so only one summary.
+                log('summary', summaries[0])
+                summaries[0].added.forEach(function(addedElement){
+                  …
+                })
+              },
+              queries: [{ element: 'someelementype.someclass' }]
+            });
+
+      section
+        h1 Demo time
+
+      section
+        h2 <strong>Browsing tips from 2500 year old Zoroastrians:</strong>
+        ul
+          li
+          li Change what you don't like
+          li Automate the stuff that bores you
+          li Extend and control the web apps you use
+
+      section(data-bespoke-state='emphatic')
+        h1 Thanks.
+        h2 <a href="http://twitter.com/mikemaccana">@mikemaccana</a>
+
+    // build:js scripts/scripts.js
+    script(src='bower_components/bespoke.js/dist/bespoke.min.js')
+    script(src='bower_components/bespoke-keys/dist/bespoke-keys.min.js')
+    script(src='bower_components/bespoke-touch/dist/bespoke-touch.min.js')
+    script(src='bower_components/bespoke-bullets/dist/bespoke-bullets.min.js')
+    script(src='bower_components/bespoke-scale/dist/bespoke-scale.min.js')
+    script(src='bower_components/bespoke-hash/dist/bespoke-hash.min.js')
+    script(src='bower_components/bespoke-progress/dist/bespoke-progress.min.js')
+    script(src='bower_components/bespoke-state/dist/bespoke-state.min.js')
+    script(src='bower_components/bespoke-forms/dist/bespoke-forms.min.js')
+    script(src='bower_components/prism/prism.js')
+    script(src='scripts/main.js')
+    // endbuild
