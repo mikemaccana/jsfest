@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Browse like Xerces</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vampiro+One">
+    <!-- build:css styles/styles.css-->
+    <link rel="stylesheet" type="text/css" href="bower_components/prism/themes/prism-funky.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <!-- endbuild-->
+  </head>
+  <body>
+    <article>
+      <section>
+        <h1>Hi</h1>
+        <ul>
+          <li>I'm @mikemaccana</li>
+        </ul>
+      </section>
+      <section class="firework"></section>
+      <section>
+        <p>Solving stress and uncertainty around software deploys</p>
+      </section>
+      <section>
+        <h1>Browse like Xerces, the <br/><strong>GOD KING OF THE PERSIANS</strong></h1>
+      </section>
+      <section>
+        <h2>This talk isn't:</h2>
+        <ul>
+          <li>How to make a Chrome Extension</li>
+        </ul>
+      </section>
+      <section>
+        <h2>This talk is:</h2>
+        <ul>
+          <li>Controlling the world</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Creators not consumers</h2>
+        <ul>
+          <li></li>
+          <li>Mould and shape the world in our image</li>
+          <li>Even when we're not working</li>
+        </ul>
+      </section>
+      <section class="medium"></section>
+      <section>
+        <h1>Chapter 1</h1>
+        <h2>Darius the Wizard Slayer</h2>
+      </section>
+      <section>
+        <q>Darius was an active emperor, busy with building programs in Persepolis, Susa, Egypt, and writing many Extensions in the Chrome Web Store.</q>
+        <cite>Wikipedia (retrieved just now)</cite>
+      </section>
+      <section>
+        <h1>The Story of Darius</h1>
+      </section>
+      <section class="darius"></section>
+      <section>
+        <h1>Knowing what's real</h1>
+      </section>
+      <section>
+        <h1 class="real">Shapeshifting wizard ✓</h1>
+        <h1 class="notreal">Dead King ✗</h1>
+      </section>
+      <section class="jaden"></section>
+      <section class="mirrors"></section>
+      <section>
+        <h1>Demo time</h1>
+      </section>
+      <section class="worlds"></section>
+      <section>
+        <h2>An extension</h2>
+        <ul>
+          <li>Make a folder</li>
+          <li>Make a manifest.js
+            <pre><code class="language-javascript">"content_scripts": [
+  {
+    "matches": [
+      "http://*/*",
+      "https://*/*"
+    ],
+    "js": ["js/superagent.js", "js/eyes.js"],
+    "run_at": "document_end"
+  }
+],</code></pre>
+          </li>
+          <li>Add some JS as a content script</li>
+          <li>Load chrome:///extensions, click 'developer mode', pick folder</li>
+        </ul>
+      </section>
+      <section class="pythagoras"></section>
+      <section>
+        <h2>Eye Size Calc</h2>
+        <hr>
+        <pre><code class="language-javascript">var eyeSize =
+  ( Math.sqrt(Math.pow(eyeDistanceX,2)
+    + Math.pow(eyeDistanceY,2)) )
+  / EYE_SIZE_TO_DISTANCE_RATIO;
+  </code></pre>
+      </section>
+      <section>
+        <h1>Chapter 2</h1>
+        <h2>Xerces</h2>
+      </section>
+      <section class="xerces"></section>
+      <section>
+        <ul>
+          <li>Born of Darius</li>
+          <li>Cyrus's Daughter</li>
+        </ul>
+      </section>
+      <section>
+        <ul>
+          <li>King of Persia</li>
+          <li>King of Media</li>
+          <li>Great King</li>
+          <li>King of Kings</li>
+          <li>King of Nations</li>
+          <li>Fastest Typist</li>
+        </ul>
+      </section>
+      <section class="worlds"></section>
+      <section>
+        <h2>Jumping the wall</h2>
+        <hr>
+        <pre><code class="language-javascript">var injectJSFile = function(file) {
+  var url = chrome.extension.getURL(file);
+  var script = document.createElement('script');
+  script.src = url;
+  document.querySelector('head').appendChild(script);
+}
+
+injectJSFile('injectme.js')</code></pre>
+        <h4>In your manifest.json:</h4>
+        <pre><code class="language-javascript">"web_accessible_resources": ["injectme.js"]
+</code></pre>
+      </section>
+      <section>
+        <h1>Demo time</h1>
+      </section>
+      <section>
+        <h1>Chapter 3</h1>
+        <h2>Whipping the Sea</h2>
+      </section>
+      <section>
+        <ul>
+          <li>Hellespont thwarted his ambitions</li>
+        </ul>
+      </section>
+      <section class="sea"></section>
+      <section>
+        <ul>
+          <li>A Soft Murmur</li>
+        </ul>
+      </section>
+      <section class="backgroundapp"></section>
+      <section>
+        <p>Soon Chrome will have keyboard shortcuts for extensions</p>
+        <p>So you can listen directly from the background app</p>
+      </section>
+      <section>
+        <h1>Chapter 4</h1>
+        <h2>Conquering</h2>
+      </section>
+      <section class="refresh"></section>
+      <section>
+        <h2>If only there was a programming language in the browser</h2>
+      </section>
+      <section>
+        <p>Thankyou</p>
+      </section>
+      <section>
+        <h2>Make an API for anything with MutationSummary</h2>
+        <hr>
+        <pre><code class="language-javascript">var observer = new MutationSummary({
+  callback: function(summaries){
+    // Only 1 query, so only one summary.
+    log('summary', summaries[0])
+    summaries[0].added.forEach(function(addedElement){
+      …
+    })
+  },
+  queries: [{ element: 'someelementype.someclass' }]
+});
+</code></pre>
+      </section>
+      <section>
+        <h1>Demo time</h1>
+      </section>
+      <section>
+        <h2><strong>Browsing tips from 2500 year old Zoroastrians:</strong></h2>
+        <ul>
+          <li></li>
+          <li>Change what you don't like</li>
+          <li>Automate the stuff that bores you</li>
+          <li>Extend and control the web apps you use</li>
+        </ul>
+      </section>
+      <section data-bespoke-state="emphatic">
+        <h1>Thanks.</h1>
+        <h2><a href="http://twitter.com/mikemaccana">@mikemaccana</a></h2>
+      </section>
+    </article>
+    <!-- build:js scripts/scripts.js-->
+    <script src="bower_components/bespoke.js/dist/bespoke.min.js"></script>
+    <script src="bower_components/bespoke-keys/dist/bespoke-keys.min.js"></script>
+    <script src="bower_components/bespoke-touch/dist/bespoke-touch.min.js"></script>
+    <script src="bower_components/bespoke-bullets/dist/bespoke-bullets.min.js"></script>
+    <script src="bower_components/bespoke-scale/dist/bespoke-scale.min.js"></script>
+    <script src="bower_components/bespoke-hash/dist/bespoke-hash.min.js"></script>
+    <script src="bower_components/bespoke-progress/dist/bespoke-progress.min.js"></script>
+    <script src="bower_components/bespoke-state/dist/bespoke-state.min.js"></script>
+    <script src="bower_components/bespoke-forms/dist/bespoke-forms.min.js"></script>
+    <script src="bower_components/prism/prism.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild-->
+  </body>
+</html>
