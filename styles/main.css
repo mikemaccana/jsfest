@@ -287,6 +287,23 @@ q {
 cite {
   padding: 24px 0;
 }
+.firework {
+  background-image: url("/images/firework.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  background-size: 100% auto;
+  background-color: #fff;
+}
+.medium {
+  background-image: url("/images/medium.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  background-size: 100% auto;
+}
 .worlds {
   background-image: url("/images/worlds.png");
   background-repeat: no-repeat;
