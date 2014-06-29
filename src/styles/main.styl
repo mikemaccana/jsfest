@@ -38,6 +38,7 @@ bullet_transition_translate_x = 16px
 
 article
   transition: background slide_transition_length slide_transition_easing
+  background-color: #222
   display: none
   &.bespoke-parent
     display: block
@@ -161,12 +162,23 @@ pre
 // content styles
 
 body
-  font-family: helvetica, arial, sans-serif
+  font-family: Lato, helvetica, arial, sans-serif
   font-size: 18px
   color: whiteSmoke
 
 h1
   font-size: 72px
+  line-height: 82px
+  letter-spacing: -2px
+  margin-bottom: 16px
+  font-family: 'Vampiro One', cursive;
+
+h1.chapter
+  color: rgb(56, 244, 209)
+
+h3.demo
+  color: #38EAF4
+  font-size: 36px
   line-height: 82px
   letter-spacing: -2px
   margin-bottom: 16px
@@ -222,9 +234,8 @@ slide-background(background)
   background-position: center
   background-size: 100% auto
 
-.firework
-  slide-background url('/images/firework.png')
-  background-color: white
+.sandpit
+  slide-background url('/images/sandpit.png')
 
 .medium
   slide-background url('/images/medium.png')
@@ -261,3 +272,11 @@ slide-background(background)
 
 .notreal
   color: red;
+
+section::after
+  content '@mikemaccana'
+  font-family 'Vampiro One'
+  position absolute
+  right 2vh
+  bottom 2vh
+  color #777
