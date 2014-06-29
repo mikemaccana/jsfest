@@ -21,6 +21,7 @@ article {
   -o-transition: background 0.6s ease;
   -ms-transition: background 0.6s ease;
   transition: background 0.6s ease;
+  background-color: #222;
   display: none;
 }
 article.bespoke-parent {
@@ -235,7 +236,7 @@ pre {
   border-radius: 8px;
 }
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: Lato, helvetica, arial, sans-serif;
   font-size: 18px;
   color: whiteSmoke;
 }
@@ -246,11 +247,25 @@ h1 {
   margin-bottom: 16px;
   font-family: 'Vampiro One', cursive;
 }
+h1.chapter {
+  color: #38f4d1;
+}
+h3.demo {
+  color: #38eaf4;
+  font-size: 36px;
+  line-height: 82px;
+  letter-spacing: -2px;
+  margin-bottom: 16px;
+  font-family: 'Vampiro One', cursive;
+}
 h2 {
   font-size: 42px;
   letter-spacing: -1px;
   margin-bottom: 8px;
   font-family: 'Vampiro One', cursive;
+}
+q {
+  font-family: Times;
 }
 h3 {
   font-size: 24px;
@@ -287,17 +302,16 @@ q {
 cite {
   padding: 24px 0;
 }
-.firework {
-  background-image: url("images/firework.png");
+.sandpit {
+  background-image: url("/images/sandpit.png");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
   background-size: 100% auto;
-  background-color: #fff;
 }
 .medium {
-  background-image: url("images/medium.png");
+  background-image: url("/images/medium.png");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 100% auto;
@@ -305,7 +319,7 @@ cite {
   background-size: 100% auto;
 }
 .worlds {
-  background-image: url("images/worlds.png");
+  background-image: url("/images/worlds.png");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 100% auto;
@@ -313,7 +327,7 @@ cite {
   background-size: 100% auto;
 }
 .mirrors {
-  background-image: url("images/mirrors.png");
+  background-image: url("/images/mirrors.png");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 100% auto;
@@ -321,7 +335,7 @@ cite {
   background-size: 100% auto;
 }
 .jaden {
-  background-image: url("images/jaden.jpg");
+  background-image: url("/images/jaden.jpg");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 100% auto;
@@ -329,7 +343,7 @@ cite {
   background-size: 100% auto;
 }
 .darius {
-  background-image: url("images/darius.jpg");
+  background-image: url("/images/darius.jpg");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 100% auto;
@@ -337,7 +351,7 @@ cite {
   background-size: 100% auto;
 }
 .xerces {
-  background-image: url("images/xerces.jpg");
+  background-image: url("/images/xerces.jpg");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 100% auto;
@@ -345,7 +359,7 @@ cite {
   background-size: 100% auto;
 }
 .refresh {
-  background-image: url("images/refresh.png");
+  background-image: url("/images/refresh.png");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 100% auto;
@@ -353,7 +367,7 @@ cite {
   background-size: 100% auto;
 }
 .pythagoras {
-  background-image: url("images/pythagoras.png");
+  background-image: url("/images/pythagoras.png");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 100% auto;
@@ -361,7 +375,7 @@ cite {
   background-size: 100% auto;
 }
 .sea {
-  background-image: url("images/sea.jpg");
+  background-image: url("/images/sea.jpg");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 100% auto;
@@ -369,7 +383,7 @@ cite {
   background-size: 100% auto;
 }
 .backgroundapp {
-  background-image: url("images/backgroundapp.png");
+  background-image: url("/images/backgroundapp.png");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 100% auto;
@@ -381,4 +395,12 @@ cite {
 }
 .notreal {
   color: #f00;
+}
+section::after {
+  content: '@mikemaccana';
+  font-family: 'Vampiro One';
+  position: absolute;
+  right: 2vh;
+  bottom: 2vh;
+  color: #777;
 }
