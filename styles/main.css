@@ -303,7 +303,7 @@ cite {
   padding: 24px 0;
 }
 .sandpit {
-  background-image: url("/images/sandpit.png");
+  background-image: url("images/sandpit.png");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 100% auto;
@@ -311,7 +311,7 @@ cite {
   background-size: 100% auto;
 }
 .medium {
-  background-image: url("/images/medium.png");
+  background-image: url("images/medium.png");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 100% auto;
@@ -319,7 +319,7 @@ cite {
   background-size: 100% auto;
 }
 .worlds {
-  background-image: url("/images/worlds.png");
+  background-image: url("images/worlds.png");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 100% auto;
@@ -327,7 +327,7 @@ cite {
   background-size: 100% auto;
 }
 .mirrors {
-  background-image: url("/images/mirrors.png");
+  background-image: url("images/mirrors.png");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 100% auto;
@@ -335,7 +335,7 @@ cite {
   background-size: 100% auto;
 }
 .jaden {
-  background-image: url("/images/jaden.jpg");
+  background-image: url("images/jaden.jpg");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 100% auto;
@@ -343,7 +343,7 @@ cite {
   background-size: 100% auto;
 }
 .darius {
-  background-image: url("/images/darius.jpg");
+  background-image: url("images/darius.jpg");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 100% auto;
@@ -351,7 +351,7 @@ cite {
   background-size: 100% auto;
 }
 .xerces {
-  background-image: url("/images/xerces.jpg");
+  background-image: url("images/xerces.jpg");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 100% auto;
@@ -359,7 +359,7 @@ cite {
   background-size: 100% auto;
 }
 .refresh {
-  background-image: url("/images/refresh.png");
+  background-image: url("images/refresh.png");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 100% auto;
@@ -367,7 +367,7 @@ cite {
   background-size: 100% auto;
 }
 .pythagoras {
-  background-image: url("/images/pythagoras.png");
+  background-image: url("images/pythagoras.png");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 100% auto;
@@ -375,7 +375,7 @@ cite {
   background-size: 100% auto;
 }
 .sea {
-  background-image: url("/images/sea.jpg");
+  background-image: url("images/sea.jpg");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 100% auto;
@@ -383,7 +383,7 @@ cite {
   background-size: 100% auto;
 }
 .backgroundapp {
-  background-image: url("/images/backgroundapp.png");
+  background-image: url("images/backgroundapp.png");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 100% auto;
